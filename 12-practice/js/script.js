@@ -21,3 +21,15 @@ seriesDB.series[lastSeries2] = score2;
 
 console.log(seriesDB);
 
+
+
+// extra
+const property = 'Age', value = 20;
+
+const theif = {
+    jacket: "Black",
+};
+
+theif[property] = value;
+
+console.log(theif);
