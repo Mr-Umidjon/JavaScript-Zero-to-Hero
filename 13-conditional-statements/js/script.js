@@ -18,6 +18,7 @@ if (age > 25) {
     console.log("Cartoon");
 }
 
+
 const color = 'red';
 
 switch (color) {
