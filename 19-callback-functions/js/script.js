@@ -16,3 +16,16 @@ function second() {
 
 first();
 second();
+
+
+
+function  edu(subject, callback) {
+    console.log(`I want to teach ${subject}`);
+    callback();
+}
+
+function done() {
+    console.log("That's great");
+}
+
+edu('JavaScript', done);
