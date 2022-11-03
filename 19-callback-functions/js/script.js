@@ -1,21 +1,21 @@
 "use strict";
 
-// CallBack fubctions
+// // CallBack fubctions
 
-function first(){
-    // code
-    setTimeout(() => {
-        console.log(1);
-    }, 1000);
-}
+// function first(){
+//     // code
+//     setTimeout(() => {
+//         console.log(1);
+//     }, 1000);
+// }
 
-function second() {
-    // code
-    console.log(2);
-}
+// function second() {
+//     // code
+//     console.log(2);
+// }
 
-first();
-second();
+// first();
+// second();
 
 
 
@@ -29,3 +29,22 @@ function done() {
 }
 
 edu('JavaScript', done);
+
+
+// CallBack fubctions
+
+function first(cb){
+    // code
+    setTimeout(() => {
+        console.log(1);
+        cb();
+    }, 1000);
+}
+
+function second() {
+    // code
+    console.log(2);
+}
+
+first(second);
+
