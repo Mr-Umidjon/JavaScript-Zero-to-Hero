@@ -95,4 +95,12 @@ console.log(arr);
 console.log(nums);
 
 
+// SPREAD 
+const liverpool = ['Salah', "Mane"];
+const manCity = ['Mahrez'];
+
+const mixPlayer = [...liverpool, ...manCity];
+
+console.log(mixPlayer);
+console.log(...mixPlayer);
 
