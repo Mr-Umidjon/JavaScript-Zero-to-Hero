@@ -27,3 +27,9 @@ console.log(arr1);
 arr1[99] = 12;
 console.log(arr1.length);
 console.log(arr1);
+
+
+const arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
+arr2.forEach(function (item, index, arr2){
+    console.log(`${index}: ${item} into arr ${arr2}`);
+});
