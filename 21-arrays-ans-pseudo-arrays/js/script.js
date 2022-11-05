@@ -33,3 +33,16 @@ const arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
 arr2.forEach(function (item, index, arr2){
     console.log(`${index}: ${item} into arr ${arr2}`);
 });
+
+const movies = prompt("What's your favourite movies", '');
+const userMovies = movies.split(', ');
+
+console.log(userMovies);
+console.log(userMovies.join('-'));
+
+const numbers = [2, 3, 1, 4, 5, 1, 33, 22];
+numbers.sort();
+console.log(numbers);
+
+numbers.sort((a, b) => a - b);
+console.log(numbers);
