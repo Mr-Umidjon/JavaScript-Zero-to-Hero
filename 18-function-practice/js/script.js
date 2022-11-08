@@ -21,21 +21,21 @@ const seriesDB = {
 };
 
 function rememberMySeries(){
-     for (let i = 0; i < 2; i++){
-        const lastSeries = prompt("Which series did you last watch?");
-        const score = +prompt("How many points did you score?");
+    for (let i = 0; i < 2; i++){
+    const lastSeries = prompt("Which series did you last watch?");
+    const score = +prompt("How many points did you score?");
 
-        if (lastSeries != null && score != null && lastSeries != '' && score != '')
-        {
-            seriesDB.series[lastSeries] = score;
-            console.log("done");
-            
-        }
-        else{
-            console.log("error");
-            i--;
-        }
-     }
+    if (lastSeries != null && score != null && lastSeries != '' && score != '')
+    {
+        seriesDB.series[lastSeries] = score;
+        console.log("done");
+        
+    }
+    else{
+        console.log("error");
+        i--;
+    }
+    }
 }
 
 rememberMySeries();
