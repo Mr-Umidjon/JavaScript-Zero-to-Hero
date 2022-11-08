@@ -39,3 +39,9 @@ for (let i = 1; i <= 10; i++ ) {
     }
     console.log(i);
 }
+
+// forEach
+const arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
+arr2.forEach(function (item, index, arr2){
+    console.log(`${index}: ${item} into arr ${arr2}`);
+});
