@@ -45,7 +45,7 @@ const seriesDB = {
         for (let i=0; i < 3; i++){
             const genre = prompt(`Your favorite genre ${i}`);
             if (genre != null && genre != ''){
-                seriesDB.genres[i] = genre;   
+                seriesDB.genres[i] = genre.toLocaleLowerCase();   
             }else {
                 i--;
             }
