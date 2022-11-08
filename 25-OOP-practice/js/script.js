@@ -50,7 +50,7 @@ const seriesDB = {
                 i--;
             }
         }
-        seriesDB.genres.forEach(function (genre, index, genres) {
+        seriesDB.genres.forEach((genre, index) => {
             console.log(`Your favorite genre ${index + 1}: ${seriesDB.genres[index]}`);
         });
     },
