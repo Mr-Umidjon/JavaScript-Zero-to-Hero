@@ -5,6 +5,7 @@ const buttons = document.querySelectorAll('button');
 const circles = document.querySelectorAll('.circle');
 const circle = document.querySelector('.circle');
 const hearts = document.querySelectorAll('.heart');
+const circleWrapper = document.querySelector('.circle__wrapper');
 
 console.log(box);
 console.dir(box);
@@ -28,3 +29,29 @@ for (let i=0; i < hearts.length; i++){
 hearts.forEach(element => {
     element.style.backgroundColor = 'blue';
 });
+
+
+
+const btn = document.createElement('button');
+const text = document.createTextNode("I am text");
+
+document.body.append(btn);
+
+
+const myCircle = document.createElement('div');
+myCircle.classList.add('circle');
+
+// document.body.append(myCircle);
+// circleWrapper.append(myCircle);
+// circleWrapper.before(myCircle);
+// circleWrapper.after(myCircle);
+// circles[0].before(myCircle);
+// circles[1].remove();
+// circles[2].replaceWith(myCircle);
+
+circleWrapper.append(myCircle);
+// myCircle.innerHTML = '<h1>E</h1>';
+myCircle.textContent = 'E';
+
+
+circleWrapper.insertAdjacentHTML('afterbegin', '<pre>E</pre>');
